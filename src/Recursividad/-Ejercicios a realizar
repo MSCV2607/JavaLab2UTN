@@ -1,0 +1,16 @@
+Programa 1: División con Restas (Recursión e Iteración)
+Desarrolla un programa que realice la división de dos números enteros utilizando tanto el
+enfoque recursivo como el iterativo con restas sucesivas. Implementa ambos enfoques en la
+misma clase, utilizando la sobrecarga de métodos para diferenciarlos. Luego, realiza pruebas
+utilizando distintos pares de números. (E1)
+
+Programa 2: Sumatoria Recursiva
+Escribe un programa que calcule la sumatoria de los números enteros desde 1 hasta un número
+dado utilizando una función recursiva. Implementa esta funcionalidad en una clase separada.
+Asegúrate de probar la función con diferentes valores de entrada. (E2)
+
+Programa 3: Factorial con Sobrecarga (Recursión e Iteración)
+Crea un programa que calcule el factorial de un número utilizando dos métodos diferentes: uno
+utilizando recursión y otro utilizando iteración. Estos métodos deben estar en una clase distinta.
+Emplea la sobrecarga de métodos para diferenciar entre las dos implementaciones. Realiza
+pruebas del programa con distintos números enteros.

@@ -1,0 +1,43 @@
+Supongamos que estás trabajando en un sistema de gestión de empleados para una empresa.
+Debes diseñar una jerarquía de clases que incluya empleados de diferentes tipos y utilizar herencia,
+clases abstractas e interfaces para lograrlo.
+
+1. Crea una clase, abstracta de ser necesaria, llamada `Empleado` que tenga los siguientes atributos y métodos:
+   - Atributos:
+     - `nombre` (String)
+     - `id` (int)
+     - `sueldoBase` (double)
+   - Métodos abstractos:
+     - `calcularSueldo()`: Este método abstracto debe calcular el sueldo del empleado en función de su
+     tipo específico.
+
+2. Crea las siguientes clases concretas que hereden de `Empleado`:
+   - `EmpleadoPorHoras`: Este tipo de empleado gana un sueldo por horas trabajadas.
+   Debe tener un atributo adicional `horasTrabajadas` (int) y debe implementar el método `calcularSueldo()`
+   de acuerdo a su lógica.
+   - `EmpleadoAsalariado`: Este tipo de empleado gana un sueldo fijo mensual. Debe
+   implementar el método `calcularSueldo()` de acuerdo a su lógica.
+   - `EmpleadoComision`: Este tipo de empleado gana un sueldo base más una comisión por ventas.
+   Debe tener un atributo adicional `ventasRealizadas` (double) y debe implementar el método
+   `calcularSueldo()` de acuerdo a su lógica.
+
+3. Define una interfaz llamada `Impuesto` con un método abstracto `calcularImpuesto()` que calcule el
+impuesto a pagar para cada tipo de empleado. Las clases concretas de empleados deben implementar esta interfaz.
+
+4. Crea una clase llamada `GestorEmpleados` que contenga un `ArrayList` para almacenar objetos de tipo
+`Empleado`.
+
+5. En el `GestorEmpleados`, crea métodos para agregar, modificar o eliminar empleados del ArrayList.
+
+6. Implementa un programa principal (`main`) que permita al usuario agregar, modificar o
+editar empleados y calcular sus sueldos e impuestos. Asegúrate de manejar las excepciones
+ adecuadamente, por ejemplo, si el usuario ingresa un valor no válido para horas trabajadas o
+ ventas realizadas o cualquier otra posibilidad de error.
+
+
+Entrega:
+Desarrolla para el programa un paquete donde colocar todas las clases necesarias, sin que
+ esto afecte a los demás paquetes.
+Asegúrate de incluir comentarios explicativos en tu código para indicar qué hace cada parte importante.
+Una vez que hayas completado el programa, compila y ejecuta para verificar que funcionan
+ correctamente y subir a GITHUB

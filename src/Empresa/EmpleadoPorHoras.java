@@ -1,17 +1,17 @@
 package Empresa;
 
 class EmpleadoPorHoras extends Empleado implements Impuesto {
-    public int horasTrabajadas;
+    protected int horasTrabajadas;
 
     // Constructor de la clase EmpleadoPorHoras
-    public EmpleadoPorHoras(String nombre, int id, double sueldoBase, int horasTrabajadas) {
+    protected EmpleadoPorHoras(String nombre, int id, double sueldoBase, int horasTrabajadas) {
         super(nombre, id, sueldoBase);
         this.horasTrabajadas = horasTrabajadas;
     }
 
     // Implementación del método abstracto para calcular el sueldo del empleado por horas
     @Override
-    public double calcularSueldo() {
+    protected double calcularSueldo() {
         return sueldoBase * horasTrabajadas;
     }
 

@@ -11,7 +11,7 @@ class EmpleadoComision extends Empleado implements Impuesto {
 
     // Implementación del método abstracto para calcular el sueldo del empleado con comisión
     @Override
-    public double calcularSueldo() {
+    protected double calcularSueldo() {
         return sueldoBase + (0.1 * ventasRealizadas); // 10% de comisión
     }
 

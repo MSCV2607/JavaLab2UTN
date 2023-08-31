@@ -6,12 +6,12 @@ abstract class Empleado {
     protected double sueldoBase;
 
     // Constructor de la clase Empleado
-    public Empleado(String nombre, int id, double sueldoBase) {
+    protected Empleado(String nombre, int id, double sueldoBase) {
         this.nombre = nombre;
         this.id = id;
         this.sueldoBase = sueldoBase;
     }
 
     // Método abstracto para calcular el sueldo del empleado
-    public abstract double calcularSueldo();
+    protected abstract double calcularSueldo();
 }
